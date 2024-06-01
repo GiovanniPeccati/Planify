@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="form-container">
+      <form action="/todos" method="post" class="form">
+        <label for="title" class="form-label">Titolo:</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          class="form-input"
+          required
+        />
+        <label for="details" class="form-label">Dettagli:</label>
+        <textarea id="details" name="details" class="form-textarea"></textarea>
+        <button class="form-button">Crea</button>
+      </form>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
