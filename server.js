@@ -6,7 +6,7 @@ const Todo = require("./models/todo");
 const app = express();
 
 const dbURI =
-  "mongodb+srv://<username>:<password>@testcluster.yghusht.mongodb.net/<collection>?retryWrites=true&w=majority&appName=<ClusterName>";
+  "mongodb+srv://<username>:<password>@testcluster.yghusht.mongodb.net/<collectionName>?retryWrites=true&w=majority&appName=<clusterName>";
 
 mongoose
   .connect(dbURI)
